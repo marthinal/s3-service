@@ -4,6 +4,15 @@ Service client for AWS S3 using Wire for dependency injection
 ### Example: Save a file
 
 ```go
+package main
+
+import (
+	"fmt"
+	s3 "github.com/marthinal/s3-service"
+	"log"
+	"net/http"
+)
+
 const MaxUploadSize = 1024 * 1024
 
 func main()  {
